@@ -1,0 +1,167 @@
+\documentclass[12pt,a4paper,twoside,openany]{book}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% DULEZITE PRIKAZY, PRECTETE SI KOMENTARE A DOPLNTE JMENA %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{settings/layout_commands.tex} % nacteni novych prikazu
+
+
+%\visualmode{print} % print mode - vhodne pro tisk, prazdne stranky na zacatku aby dulezite casti byly na liche strane, asymetricke okraje pro vazbu, cisla stranek v rozich
+\visualmode{screen} % screen mode - vhodne pro elektronickou verzi, zadne prazdne stranky, symetricke okraje, cisla stranek uprostred
+
+\thesislanguage{czech} % prace bude v cestine, (diakritiku v nazvech sekci, kapitol atp. doporucuju psat pomoci specialnich znaku)
+%\thesislanguage{english} % prace bude v anglictine
+
+\thesisauthor{Kája Novák} % jmeno autora prace, l
+\thesissupervisor{prof. doc. Ing. Jm\'{e}no P\v{r}\'{i}jmen\'{i}, PhD.} % jmeno vedouciho
+\thesistitle{Nazev Prace} % nazev prace
+
+
+\input{settings/vut_style.tex} % nastaveni stylu dokumentu
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+	
+%% titulni list + zadani - oba dokumenty lze stahnout ve studisu, zadani muzete naskenovat a prilozit podepsane (v PDF)
+\VUTtitle{pages/titulni_color.pdf}{pages/zadani_color.pdf} % vlozi pdf do dokumentu
+%\VUTtitle{pages/titulni_color.pdf}{blank} % vlozi prazdne misto pro originalni zadani a podepsanou kopii pri tisku (pouzit ve verzi print)
+
+
+\abstract{ % abstrakt cesky
+	...Abstrakt...
+	}{ % abstrakt anglicky
+	...anglicky...
+	}{ % klicova slova česky
+	...klicova slova...
+	}{ % klicova slova anglicky
+	...anglicky...
+	} % vyrobi i citaci
+
+\acknowledgements{
+	Prohlášení...
+	}{
+	Poděkování..
+	} % vlozi prohlaseni a podekovani
+
+
+\vutpagestyle % prepise styl stranky, vlozi obsah
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%% PROSTOR PRO KAPITOLY PRACE %%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{chapters/intro.tex} % vlozi kapitolu 1
+ 	
+
+\input{chapters/example.tex} % vlozi kapitolu 2
+%\input{chapters/abbreviations.tex} % vlozi zkratky
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \pagestyle{plain}
+% \ifthenelse{\equal{\docmode}{print}}
+% {
+% 	%\fancyhead[LE,RO]{Appendix}
+% 	\fancyhead[LO,RE]{Bib}
+% 	\fancyfoot[RO]{\thepage}
+% 	\fancyfoot[LE]{\thepage}
+% }{
+% 	%\fancyhead[L]{Appendix}
+% 	\fancyhead[R]{Bib}
+% 	\fancyfoot[C]{\thepage}
+% }
+% \input{chapters/bibliography} % vlozi citace
+% \ifthenelse{\equal{\docmode}{print}}
+% {
+% 	%\fancyhead[LE,RO]{Appendix}
+% 	\fancyhead[LO,RE]{Bib}
+% 	\fancyfoot[RO]{\thepage}
+% 	\fancyfoot[LE]{\thepage}
+% }{
+% 	%\fancyhead[L]{Appendix}
+% 	\fancyhead[R]{Bib}
+% 	\fancyfoot[C]{\thepage}
+% }
+% \label{MyLastPage}
+
+% \chapter*{Appendix} % prilohy
+% \addcontentsline{toc}{chapter}{Appendix}
+
+
+% \pagestyle{plain}
+% \ifthenelse{\equal{\docmode}{print}}
+% {
+% 	%\fancyhead[LE,RO]{Appendix}
+% 	\fancyhead[LO,RE]{Appendix}
+% 	\fancyfoot[RO]{\thepage}
+% 	\fancyfoot[LE]{\thepage}
+% }{
+% 	%\fancyhead[L]{Appendix}
+% 	\fancyhead[R]{Appendix}
+% 	\fancyfoot[C]{\thepage}
+% }
+
+
+% \lipsum[1]
+% \begin{figure}[!h] 
+% % * <martin.appel@mechlab.cz> 2018-05-23T10:35:59.125Z:
+% %
+% % ^.
+% 	\begin{center}
+% 		\includegraphics[scale=0.4]{images/example_fig.pdf}
+% 	\end{center}
+% 	\caption[Caption in list of figures]{Caption of the figure}
+% 	\label{fig:figurelabel}
+% \end{figure}
+% \lipsum[1]
+% \begin{figure}[!h] 
+% 	\begin{center}
+% 		\includegraphics[scale=0.4]{images/example_fig.pdf}
+% 	\end{center}
+% 	\caption[Caption in list of figures]{Caption of the figure}
+% 	\label{fig:figurelabel}
+% \end{figure}
+% \lipsum[1]
+% \begin{figure}[!h] 
+% 	\begin{center}
+% 		\includegraphics[scale=0.4]{images/example_fig.pdf}
+% 	\end{center}
+% 	\caption[Caption in list of figures]{Caption of the figure}
+% 	\label{fig:figurelabel}
+% \end{figure}
+% \lipsum[1]
+% \begin{figure}[!h] 
+% 	\begin{center}
+% 		\includegraphics[scale=0.4]{images/example_fig.pdf}
+% 	\end{center}
+% 	\caption[Caption in list of figures]{Caption of the figure}
+% 	\label{fig:figurelabel}
+% \end{figure}
+% \lipsum[1]
+% \begin{figure}[!h] 
+% 	\begin{center}
+% 		\includegraphics[scale=0.4]{images/example_fig.pdf}
+% 	\end{center}
+% 	\caption[Caption in list of figures]{Caption of the figure}
+% 	\label{fig:figurelabel}
+% \end{figure}
+% \lipsum[1]
+% \begin{figure}[!h] 
+% 	\begin{center}
+% 		\includegraphics[scale=0.4]{images/example_fig.pdf}
+% 	\end{center}
+% 	\caption[Caption in list of figures]{Caption of the figure}
+% 	\label{fig:figurelabel}
+% \end{figure}
+% \lipsum[1]
+% \begin{figure}[!h] 
+% 	\begin{center}
+% 		\includegraphics[scale=0.4]{images/example_fig.pdf}
+% 	\end{center}
+% 	\caption[Caption in list of figures]{Caption of the figure}
+% 	\label{fig:figurelabel}
+% \end{figure}	
+
+
+\end{document}
