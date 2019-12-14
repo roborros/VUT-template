@@ -56,8 +56,17 @@ citecolor=black]%,a4paper]
 \DeclareGraphicsExtensions{.png,.pdf, .eps,.bmp,.jpg,.emf}
 
 %% language settings
-\usepackage[english,czech]{babel}
-\usepackage[utf8x]{inputenc}
+\ifthenelse{\equal{\thelanguage}{czech}}{
+	\usepackage[czech]{babel}
+	\usepackage[utf8]{inputenc}
+	\usepackage[T1]{fontenc}
+	\usepackage{lmodern}
+
+
+}{
+	\usepackage[english,czech]{babel}
+}
+
 
 %% chapter foot/head style
 \ifthenelse{\equal{\docmode}{print}}
