@@ -41,6 +41,8 @@
 \titlespacing*{\subsection}{0cm}{0.3cm}{0.3cm}
 
 \setlength{\parskip}{0pt} % changes vertical space between paragraphs
+\setlength{\headheight}{16pt}
+
 % coloring format
 \usepackage[pdftitle={Masters Thesis},
 pdfauthor={\theauthor},
@@ -50,10 +52,11 @@ linkcolor=black,
 colorlinks=true,
 breaklinks=true,
 urlcolor=black,
-citecolor=black]%,a4paper]
+citecolor=black,
+unicode]%,a4paper]
 {hyperref}
 %\usepackage[pdftex]{graphicx}
-\DeclareGraphicsExtensions{.png,.pdf, .eps,.bmp,.jpg,.emf}
+\DeclareGraphicsExtensions{.png,.pdf,.eps,.bmp,.jpg,.emf}
 
 %% language settings
 \ifthenelse{\equal{\thelanguage}{czech}}{
