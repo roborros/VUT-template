@@ -20,6 +20,8 @@
 \usepackage[shortlabels]{enumitem} % allows itemize indent options
 \usepackage{bbding} % special signs (\Checkmark, \XSolidBrush)
 %\def\labelitemi{--} % change itmize default marker
+
+\usepackage{setspace}
 \usepackage[hang,flushmargin]{footmisc} % footnotes without indentation
 
 %% style settings
@@ -33,8 +35,8 @@
 
 % title formats
 \titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter}{5mm}{\Huge\bfseries}
-\titleformat{\section}[hang]{\LARGE\bfseries}{\thesection}{5mm}{\LARGE\bfseries}
-\titleformat{\subsection}[hang]{\Large\bfseries}{\thesubsection}{5mm}{\Large\bfseries}
+\titleformat{\section}[hang]{\LARGE\bfseries\setstretch{0.6}}{\thesection}{5mm}{\LARGE\bfseries}
+\titleformat{\subsection}[hang]{\Large\bfseries\setstretch{0.6}}{\thesubsection}{5mm}{\Large\bfseries}
 
 \titlespacing*{\chapter}{0cm}{0cm}{1.5cm} % {command}{left}{before}{after}
 \titlespacing*{\section}{0cm}{0.5cm}{0.3cm}
