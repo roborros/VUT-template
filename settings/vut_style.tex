@@ -32,11 +32,16 @@
 {\usepackage[top=2.4cm, bottom=2.3cm, left=1.5cm, right=1.5cm, bindingoffset=10mm]{geometry}}
 {\usepackage[top=2.4cm, bottom=2.3cm, left=2cm, right=2cm, bindingoffset=0mm]{geometry}}
 
+% original VUT print size - 160 mm x 240 mm
+% \ifthenelse{\equal{\docmode}{print}} 
+% {\usepackage[top=2.9cm, bottom=2.8cm, left=2cm, right=2cm, bindingoffset=10mm]{geometry}}
+% {\usepackage[top=2.9cm, bottom=2.8cm, left=2.5cm, right=2.5cm, bindingoffset=0mm]{geometry}}
+
 
 % title formats
 \titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter}{5mm}{\Huge\bfseries}
-\titleformat{\section}[hang]{\LARGE\bfseries\setstretch{0.6}}{\thesection}{5mm}{\LARGE\bfseries}
-\titleformat{\subsection}[hang]{\Large\bfseries\setstretch{0.6}}{\thesubsection}{5mm}{\Large\bfseries}
+\titleformat{\section}[hang]{\Large\bfseries\setstretch{0.6}}{\thesection}{5mm}{\Large\bfseries}
+\titleformat{\subsection}[hang]{\large\bfseries\setstretch{0.6}}{\thesubsection}{5mm}{\normalsize\bfseries}
 
 \titlespacing*{\chapter}{0cm}{0cm}{1.5cm} % {command}{left}{before}{after}
 \titlespacing*{\section}{0cm}{0.5cm}{0.3cm}
