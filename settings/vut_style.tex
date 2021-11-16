@@ -1,6 +1,6 @@
 %% included paskages
 \usepackage{pdfpages}
-\usepackage{xifthen}
+% \usepackage{xifthen}
 \usepackage{fancyhdr}
 \usepackage{lastpage} 
 \usepackage{titlesec} % allows title formating
@@ -64,18 +64,6 @@ unicode]%,a4paper]
 {hyperref}
 %\usepackage[pdftex]{graphicx}
 \DeclareGraphicsExtensions{.png,.pdf,.eps,.bmp,.jpg,.emf}
-
-%% language settings
-\ifthenelse{\equal{\thelanguage}{czech}}{
-	\usepackage[czech]{babel}
-	\usepackage[utf8]{inputenc}
-	\usepackage[T1]{fontenc}
-	\usepackage{lmodern}
-
-
-}{
-	\usepackage[english,czech]{babel}
-}
 
 
 %% chapter foot/head style

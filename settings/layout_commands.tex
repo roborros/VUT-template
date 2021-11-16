@@ -1,5 +1,8 @@
 %%% work %%%
 
+\usepackage{xifthen}
+
+
 % definice promenne docmode - print or screen mode
 \newcommand{\visualmode}[1]{
 	\def\docmode{#1}
@@ -8,7 +11,17 @@
 % definice promenne langmode - czech or english mode
 \newcommand{\thesislanguage}[1]{
 	\def\thelanguage{#1} %czech/english
+	
+	\ifthenelse{\equal{#1}{czech}}{
+	    \usepackage[czech]{babel}
+	    \usepackage[utf8]{inputenc}
+	    \usepackage[T1]{fontenc}
+	    \usepackage{lmodern}
+    }{
+	    \usepackage[english,czech]{babel}
+    }
 }
+
 
 % autor prace
 \newcommand{\thesisauthor}[1]{
@@ -132,4 +145,5 @@
 %\newcommand*{\fullref}[1]{\hyperref[{#1}]{Appendix \nameref*{#1}}} % named refference - no number
 %\newcommand*{\fullref}[1]{\hyperref[{#1}]{\autoref*{#1} \nameref*{#1}}} % nambed reference - number
 
+	
 	
